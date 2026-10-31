@@ -1,0 +1,17 @@
+backend/node_modules/
+node_modules/
+.env
+.env.*
+!.env.example
+.supabase/
+releases/
+*.log
+coverage/
+.DS_Store
+.clasprc.json
+**/.clasprc.json
+backend/supabase/.temp/
+**/.clasp.json
+*.zip
+# Capturas de testes locais permanecem fora do repositório público.
+docs/evidencias/teste-*.png

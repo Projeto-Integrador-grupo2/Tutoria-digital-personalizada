@@ -1,0 +1,263 @@
+{
+  "consolidated_version": "1.2.0-rc.1",
+  "date": "2026-10-30",
+  "base": "Tutor_Digital_Git_Ready_v1_1.zip",
+  "archives": [
+    {
+      "name": "Tutor_Digital_Git_Ready_v1_1.zip",
+      "sha256": "45368bc2d0a667fab7971640e7424d8c3f7786112f7339ad4b99740bfd443557"
+    },
+    {
+      "name": "Tutor_Digital_Web_Backend_Supabase_GROQ_v1_1.zip",
+      "sha256": "23e7ef85888b2d5b2a9ed15e13a26b60c18dc538f19c4d13f46663a3592551d5"
+    }
+  ],
+  "files": [
+    {
+      "file": "tutor-digital-web-backend/.editorconfig",
+      "git_ready_sha256": "18183dfc694a64c8bc3365319f7bd503755a86dadbf0bbd8000ab95b914e05ab",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.env.example",
+      "git_ready_sha256": "d2891bbf6005b72ac7d8b975ed58ef7337e6ccec996a97473f00abc4daa0f8ce",
+      "backend_sha256": "d2891bbf6005b72ac7d8b975ed58ef7337e6ccec996a97473f00abc4daa0f8ce",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/.gitattributes",
+      "git_ready_sha256": "1d8ccd7d465cb7d432e807af9b82e946f855d205fcc3bfbfda8c6ecbf7aecf3a",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.github/ISSUE_TEMPLATE/bug_report.yml",
+      "git_ready_sha256": "ece3517a369d35d1a5a43c0c121feaf59f9fcf57a0703403a2c09312c9182ec3",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.github/ISSUE_TEMPLATE/config.yml",
+      "git_ready_sha256": "1f103c6a9dd07cd13a9a6f17ace6b813f47747eb9cb7e00488cb2073caaf91bb",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.github/ISSUE_TEMPLATE/feature_request.yml",
+      "git_ready_sha256": "9b53ca5e9875f1b6025d82c591f37cc14f5315afe172fc509546dd558ead39e2",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.github/PULL_REQUEST_TEMPLATE.md",
+      "git_ready_sha256": "38f4618693ac222428a9f3c1f719faa1ebbff7d11886c32aa7fd55f5941aeb32",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.github/workflows/tests.yml",
+      "git_ready_sha256": "d14608c562da5a97bc813b338124815c69230d53f56f85ad5d408f2359934cab",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.gitignore",
+      "git_ready_sha256": "158bcf3939b88e775c5c16472da4a8f2a1dcd45fffa8d3c0fc12a56c1224553c",
+      "backend_sha256": "2ba303dd017b025e41bd75dc93504a58ea2d44856f7669425873f5b186c34efa",
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/.nvmrc",
+      "git_ready_sha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/API_EXAMPLES.md",
+      "git_ready_sha256": "b889494845037e257244873411ec9d6c4a66d59a276750fd9459603e3075d487",
+      "backend_sha256": "b889494845037e257244873411ec9d6c4a66d59a276750fd9459603e3075d487",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/AUTHORS.md",
+      "git_ready_sha256": "4c7bf2cb49462009e015f888267d06e593cc0df314075f6c1eec1621a87fd4d8",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/CHANGELOG.md",
+      "git_ready_sha256": "0e7ff21fb5c2482ea0a6e5a4f54418602735bfd340f141e6882fa92a01c46988",
+      "backend_sha256": "ece10cff8a1d954089287ce865bbe561b7da0c0073e480be9240bc99690428ae",
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/CODE_OF_CONDUCT.md",
+      "git_ready_sha256": "dd27f8c49f5d100f32d1500f91adce237ede65b3858f10cc1126e14cb780acf1",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/CONTRIBUTING.md",
+      "git_ready_sha256": "7cf8175b6bfde20e64919bb60ffc520eb07e52a766b4c5392232f37e540d31e5",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/deno.json",
+      "git_ready_sha256": "5250b37da665ba770b14328880484feb4644a8372d14c3a0a147abcc48085f42",
+      "backend_sha256": "5250b37da665ba770b14328880484feb4644a8372d14c3a0a147abcc48085f42",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/DEPLOYMENT_CHECKLIST.md",
+      "git_ready_sha256": "baa098c7067d3c75b7065b9627a53d6b1138806167f5bd4c59e77d8015dc8894",
+      "backend_sha256": "baa098c7067d3c75b7065b9627a53d6b1138806167f5bd4c59e77d8015dc8894",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/docs/ARQUITETURA.md",
+      "git_ready_sha256": "0ef7957b7ab477bfd73e75b6d5f662593ea9144632aafd212b38ee6ec79b104c",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/docs/ESCOPO_MVP.md",
+      "git_ready_sha256": "02e1784401c9e3309d10ed273bf0e145bbefaa551f8783ca9dede76ee6ff2127",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/docs/GIT_WORKFLOW.md",
+      "git_ready_sha256": "7d99e8deab8b6d00fd0f04ee3511d1f52afdda3133d4f7d3cf6b134b42ee6674",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/docs/PLANO_DE_TESTES.md",
+      "git_ready_sha256": "9d163988ccf309339d87e6d269bf36a7dc7e1c47a8f896c5c15a1ed19eeb3c64",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/docs/ROADMAP.md",
+      "git_ready_sha256": "e766b4e17289644ba0a77d4e2e7c49e0f23c16d5ab246b61f1629b7fc84bed55",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/package.json",
+      "git_ready_sha256": "360ef9f119aaa9ffaabeb9e65c985a4d2ff51a0dcfef4401b297f9b1d1e6149e",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/PRIVACIDADE_E_RESILIENCIA.md",
+      "git_ready_sha256": "67efaef27e17047be0582b2fa76ac3ea83cf06bfdc23001b5f70ab153f8c6337",
+      "backend_sha256": "67efaef27e17047be0582b2fa76ac3ea83cf06bfdc23001b5f70ab153f8c6337",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/PROMPTS_PEDAGOGICOS.md",
+      "git_ready_sha256": "c37e1fbdf6a3e3bec1b326acfa462859834557dfd8a9d6598aa7f97c75cf2419",
+      "backend_sha256": "c37e1fbdf6a3e3bec1b326acfa462859834557dfd8a9d6598aa7f97c75cf2419",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/README.md",
+      "git_ready_sha256": "50fb38ee949bac791ad2922f04b57b450f02cd0e2e5c65602208b8713ef2426d",
+      "backend_sha256": "ca67a2e8268efab0d2870db76dc716289c0e72d4d467f72f4eb4b7ceed260dfd",
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/SECURITY.md",
+      "git_ready_sha256": "d00ce1ba6244790df6fd1677dfef2acfaa0f308a28280b37615f12a8bd8ee20f",
+      "backend_sha256": null,
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/config.toml",
+      "git_ready_sha256": "11a36c9a596a5f4390aa31c70a49b7a99bd6c95be616cbac104aa3700e372c0d",
+      "backend_sha256": "11a36c9a596a5f4390aa31c70a49b7a99bd6c95be616cbac104aa3700e372c0d",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/cors.ts",
+      "git_ready_sha256": "69249ead5b3b5aa9e14ec270033f419a3274ef148bedc08fb17b6ac518487b60",
+      "backend_sha256": "69249ead5b3b5aa9e14ec270033f419a3274ef148bedc08fb17b6ac518487b60",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/errors.ts",
+      "git_ready_sha256": "229cc23e33befe64525b1c715fca9b6c9f5d6df9fad56b8553977591e96c5c28",
+      "backend_sha256": "229cc23e33befe64525b1c715fca9b6c9f5d6df9fad56b8553977591e96c5c28",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/groq.ts",
+      "git_ready_sha256": "9e7be15317a210347b2905e6643afc5930c004828baa11ceb8d6ac6484621fb5",
+      "backend_sha256": "9e7be15317a210347b2905e6643afc5930c004828baa11ceb8d6ac6484621fb5",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/guardrails.ts",
+      "git_ready_sha256": "63178d3c1bc11f7b50a56f2540a0b142a7112600e4f26c4559f0403f702b4434",
+      "backend_sha256": "63178d3c1bc11f7b50a56f2540a0b142a7112600e4f26c4559f0403f702b4434",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/pii.ts",
+      "git_ready_sha256": "0f384ebdc3274d9a92c31cf153f1547df4741c88395d206dc1742272c98b3102",
+      "backend_sha256": "0f384ebdc3274d9a92c31cf153f1547df4741c88395d206dc1742272c98b3102",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/prompts.ts",
+      "git_ready_sha256": "66e3c55685eb168e64f1e08dfbcdfdc656b067758eed8afa109e91458b27c008",
+      "backend_sha256": "66e3c55685eb168e64f1e08dfbcdfdc656b067758eed8afa109e91458b27c008",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/_shared/types.ts",
+      "git_ready_sha256": "894654c69c560be55ef094142950fd1cae28529dc69adc898150257b00fcacd8",
+      "backend_sha256": "894654c69c560be55ef094142950fd1cae28529dc69adc898150257b00fcacd8",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/functions/tutor-api/index.ts",
+      "git_ready_sha256": "e82e1c9a3713c87d1ae3e3c573dd7223911a99adcdd043fe98afa2cdef8f51d8",
+      "backend_sha256": "e82e1c9a3713c87d1ae3e3c573dd7223911a99adcdd043fe98afa2cdef8f51d8",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/migrations/202609250001_tutor_backend.sql",
+      "git_ready_sha256": "d64175dd54fadae297ac4455bfad3dbb66dc9047913318c6261671763b8952fd",
+      "backend_sha256": "d64175dd54fadae297ac4455bfad3dbb66dc9047913318c6261671763b8952fd",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/supabase/migrations/202610180001_history_privacy_resilience.sql",
+      "git_ready_sha256": "b5844f4276c04a732262296419a45bd5d06afb8b8eae7aaf2de39f8e50f58855",
+      "backend_sha256": "b5844f4276c04a732262296419a45bd5d06afb8b8eae7aaf2de39f8e50f58855",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/tests/errors.test.ts",
+      "git_ready_sha256": "609ee77b14169ae51582ac834c5f86a748a9b005ace83475799c9aaee01292e4",
+      "backend_sha256": "609ee77b14169ae51582ac834c5f86a748a9b005ace83475799c9aaee01292e4",
+      "equal": true
+    },
+    {
+      "file": "tutor-digital-web-backend/tests/guardrails.test.ts",
+      "git_ready_sha256": "947b7976eb2b5a6ecfe6320dcfff5e5a46eea52cefe66990f82b950e83973a26",
+      "backend_sha256": "2ba3032cf3ca641b00a6709a2460ea31cbab23b6b3b1855d76813108bc9e4b67",
+      "equal": false
+    },
+    {
+      "file": "tutor-digital-web-backend/tests/prompts.test.ts",
+      "git_ready_sha256": "8b72ca29579d88032014e7fc12776481df9de4a871b8b9b4779d9348528433af",
+      "backend_sha256": "8b72ca29579d88032014e7fc12776481df9de4a871b8b9b4779d9348528433af",
+      "equal": true
+    }
+  ]
+}

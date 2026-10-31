@@ -1,0 +1,64 @@
+// Apps Script hospeda a interface. Auth, banco e IA ficam na Edge Function.
+function doGet() {
+  const template = HtmlService.createTemplateFromFile('Index');
+  template.logoDataUri = getLogoDataUri_();
+  return template.evaluate().setTitle('Tutoria Digital Personalizada');
+}
+
+function getLogoDataUri_() {
+  const logo = HtmlService.createHtmlOutputFromFile('Logo').getContent()
+    .replace(/[\s\uFEFF]/g, '');
+  if (!/^data:image\/png;base64,[A-Za-z0-9+/]+={0,2}$/.test(logo)) {
+    throw new Error('Confira o arquivo Logo.html: ele deve conter apenas o endereço data:image/png;base64 da imagem.');
+  }
+  return logo;
+}
+
+function include(filename) {
+  if (filename !== 'Logo') throw new Error('Recurso indisponível.');
+  return HtmlService.createHtmlOutputFromFile(filename).getContent();
+}
+
+function getBootstrap() {
+  const properties = PropertiesService.getScriptProperties();
+  const url = properties.getProperty('SUPABASE_URL') || '';
+  const key = properties.getProperty('SUPABASE_PUBLISHABLE_KEY') || properties.getProperty('SUPABASE_ANON_KEY') || '';
+  return {
+    configured: /^https:\/\/[a-z0-9-]+\.supabase\.co$/.test(url) && Boolean(key),
+    supabaseUrl: url,
+    publicKey: key,
+    registrationEnabled: properties.getProperty('REGISTRATION_ENABLED') === 'true',
+    privacyNotice: 'Não informe dados pessoais na atividade. Consulte o prazo de retenção ao entrar. A IA pode errar; confira o material da disciplina. Você pode consultar e apagar seu histórico.',
+    subjects: ['Matemática', 'Português', 'Física', 'Química', 'Biologia', 'História', 'Geografia', 'Inglês', 'Informática', 'Projeto Integrador', 'Outra disciplina'],
+    profiles: [
+      { id: 'direct', label: 'Direto', description: 'Uma ação concreta por vez, com frases curtas.' },
+      { id: 'supportive', label: 'Acolhedor', description: 'Ritmo cuidadoso e apoio para revisar a tentativa.' },
+      { id: 'investigative', label: 'Investigativo', description: 'Perguntas sobre hipóteses, estratégias e justificativas.' }
+    ]
+  };
+}
+
+// Proxy de destino fixo. Nunca recebe URL arbitrária nem chave administrativa.
+function tutorApi(body, accessToken) {
+  const config = getBootstrap();
+  if (!config.configured) throw new Error('O serviço ainda não foi configurado.');
+  if (typeof accessToken !== 'string' || accessToken.length < 20 || accessToken.length > 8192 || /[\r\n]/.test(accessToken)) {
+    throw new Error('Entre na sua conta para continuar.');
+  }
+  const serialized = JSON.stringify(body);
+  if (!body || typeof body !== 'object' || Utilities.newBlob(serialized).getBytes().length > 20000) {
+    throw new Error('Confira os campos e os limites informados.');
+  }
+  try {
+    const response = UrlFetchApp.fetch(config.supabaseUrl + '/functions/v1/tutor-api', {
+      method: 'post', contentType: 'application/json',
+      headers: { Authorization: 'Bearer ' + accessToken, apikey: config.publicKey },
+      payload: serialized, muteHttpExceptions: true
+    });
+    const result = JSON.parse(response.getContentText());
+    if (response.getResponseCode() >= 400 && !result.error) throw new Error();
+    return result;
+  } catch (_) {
+    throw new Error('Não foi possível conectar ao tutor. Aguarde e tente novamente.');
+  }
+}

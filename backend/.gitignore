@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+.supabase/
+node_modules/
+coverage/
+dist/
+*.log
+*.zip
+.idea/
+.vscode/settings.json

@@ -1,0 +1,6 @@
+# Enviar somente os arquivos da aplicação hospedada.
+**/**
+!Code.gs
+!Index.html
+!Logo.html
+!appsscript.json

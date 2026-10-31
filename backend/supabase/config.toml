@@ -1,0 +1,4 @@
+project_id = "tutor-digital-web"
+
+[functions.tutor-api]
+verify_jwt = false

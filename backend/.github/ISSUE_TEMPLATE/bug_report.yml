@@ -1,0 +1,58 @@
+name: Relatar defeito
+description: Registrar comportamento incorreto sem incluir dados pessoais ou segredos
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Não inclua chaves, JWT, dados de estudantes ou conversas reais. Vulnerabilidades devem seguir SECURITY.md.
+  - type: input
+    id: version
+    attributes:
+      label: Versão ou commit
+      placeholder: v0.4.0 ou hash do commit
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Área
+      options:
+        - API
+        - Banco e RLS
+        - GROQ
+        - Prompt e regra pedagógica
+        - Histórico
+        - Privacidade
+        - Documentação
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrição
+      description: Explique o problema usando somente dados sintéticos.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Passos para reproduzir
+      placeholder: |
+        1. Chamar a ação...
+        2. Informar dados sintéticos...
+        3. Observar...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+  - type: input
+    id: request_id
+    attributes:
+      label: Request ID, se houver
+      description: Informe somente o request_id; não envie token ou corpo completo da conversa.

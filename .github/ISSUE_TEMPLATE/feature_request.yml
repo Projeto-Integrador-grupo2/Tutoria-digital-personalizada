@@ -1,0 +1,48 @@
+name: Propor melhoria
+description: Sugerir funcionalidade ou melhoria técnica/pedagógica
+title: "[Melhoria]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema ou necessidade
+      description: Qual dificuldade do estudante, docente ou projeto precisa ser atendida?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Área principal
+      options:
+        - Pedagogia e perfis
+        - API e backend
+        - Banco e histórico
+        - Privacidade e segurança
+        - Testes
+        - Documentação
+        - Frontend futuro
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Liste resultados verificáveis.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Verificações
+      options:
+        - label: A proposta preserva a regra de não entregar respostas prontas.
+          required: true
+        - label: A proposta considera minimização e proteção de dados.
+          required: true
